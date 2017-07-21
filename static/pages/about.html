@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>About</title>
+			<!-- link to main stylesheet -->
+			<link rel= "stylesheet" type= "text/css" href= "main1.css">
+		</head>
+		<style>
+		body {background-image: url("http://www.coloringyard.com/wp-content/uploads/2016/07/light-color-background-images-for-website-top-hd-images-for-free-light-color-background-images-for-website-2-1024x640.jpg");background-repeat:no-repeat; background-size:cover;}
+   </style>
+		<body>
+			<nav>
+				<nav>
+						<ul>
+
+								<li role="presentation"><a href="about.html">About</a></li>
+								<li role="presentation"><a href="result.html">Results</a></li>
+								<li role="presentation"><a href="visualizations.html">Visualizations</a></li>
+								<li role="presentation"><a href="future.html">Future Work</a></li>
+
+						</ul>
+				</nav>
+			</nav>
+			<div class="container">
+
+				<div >
+					<h1>About</h1>
+
+					<p>Find emerging markets for athletes/sports using twitter data. <br>
+          <br>For 180 countries Tweete-lete recommends the top 5 athletes in that particular country.
+         </p>
+					<h3> Data </h3>
+					<ul>
+					 	<li> Twitter API tweepy used to get 14 GB of data. </li>
+					 	<li> The athlete names, their sport, country and gender, were scraped from ESPN. </li>
+					</ul>
+
+					<h3> Sentiment Mining </h3>
+					<p> The tweet <i>text</i> is  given a polarity from -1 to 1, with anything above 0 positive, below 0 negative, and everything else is neutral.</p>
+          <ul>
+					<li> A <i> Naive Bayes </i>[1] analysis is used for classification on an <i>n-gram model</i>[2] of the text. </li>
+					<li> TextBlob library was used. The classification is reported to have an accuracy of 0.8.</li>
+					<li>Some examples of the classification: </li> <br>
+			    <ol>
+				 				<li> <b>Positive: </b> 11 years ago today, Kobe Bryant absolutely destroyed Steve Nash. </li>
+				 				<li> <b>Negative: </b> They might've been worse than Iverson 2001 Sixers team...</li>
+				 				<li> <b>Neutral: </b> Remember when Serena williams beat sharapova and a Nigerian paper's headline the next day was "Sharap it's ova"</li>
+				 		</ol>
+					</ul>
+					<h3> Recommender Engine </h3>
+					<ul>
+						<li>  <i>Collaborative Filter </i> is used predict the most-loved players. </li>
+						<li> Countries form the customer base </li>
+						<li> Athletes form the products </li>
+						<li> The sentiment score is used as the rating </li>
+			    </ul>
+					<br>
+					<h3> Citations </h3>
+					<ol>
+						<li> McCallum, Andrew, and Kamal Nigam. "A comparison of event models for naive bayes text classification." AAAI-98 workshop on learning for text categorization. Vol. 752. 1998. </li>
+						<li> Cavnar, William B., and John M. Trenkle. "N-gram-based text categorization." Ann Arbor MI 48113.2 (1994): 161-175.</li>
+					</ol>
+				</div><!-- /.blurb -->
+
+			</div><!-- /.container -->
+			<footer >
+	    		<ul>
+	        		<li><a href="mailto:sreyag28@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/SreyaG">github.com/SreyaG</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>

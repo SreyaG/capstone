@@ -1,0 +1,158 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+img.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+    color: #FFF;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+    color: #FFF;
+    font-family:'Helvetica', 'Sans-Serif';
+}
+a {
+    text-decoration: none;
+    color: #FFF
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 50px;
+    color: #FFF;
+    font-family:'Helvetica', 'Sans-Serif';
+}
+h3 {
+    font-size: 35px;
+    color: #FFF;
+    font-family:'Helvetica', 'Sans-Serif';
+}
+p {
+    font-size: 20px;
+    color: #FFF;
+    font-family:'Helvetica', 'Sans-Serif';
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: 20px;
+    color: #FFF;
+    font-family:'Helvetica',  'Sans-Serif';
+}
+
+ul.posts {
+    margin: 20px auto 40px;
+    font-size: 20px;
+}
+
+ul.posts li {
+    list-style: none;
+}
+ol li {
+    font-size: 20px;
+    font-style: italic;
+    color:#FFF;
+    margin-top: 5px;
+
+}
+
+figure {
+    display: block;
+    width: 30%;
+    margin-top: .5em;
+    max-width: 100%;
+    height: auto;
+    /*margin-bottom: .5em;*/
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+figcaption {
+font-size: 20px;
+
+}
+input[type=text] {
+    padding: 0;
+    height: 30px;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+input[type=submit] {
+    padding: 0;
+    height: 30px;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+}
+
+label {
+color: #FFFFFF;
+font-weight: bold;
+font-size: 28px;
+}
+label:after { content: ": " }
+form {
+  text-align: center;
+}
+input[type=text] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
