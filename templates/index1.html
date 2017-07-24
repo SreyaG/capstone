@@ -8,17 +8,14 @@
 		<body background="{{ url_for('static',filename='images/bg.jpg') }}"; background-repeat:no-repeat; background-size:cover;>
 		<div class="container">
 	   <div class="header">
-			<nav>
-	    		<ul>
-						 <li role="presentation"><a href="index.html">Home</a></li>
-
-		        	<li role="presentation"><a href="{{ url_for('static',filename='pages/about.html') }}">About</a></li>
-	        		<li role="presentation"><a href="{{ url_for('static',filename='pages/result.html') }}">Results</a></li>
-							<li role="presentation"><a href="{{ url_for('static',filename='pages/visualizations.html') }}">Visualizations</a></li>
-							<li role="presentation"><a href="{{ url_for('static',filename='pages/future.html') }}">Future Work</a></li>
-
-	    		</ul>
-			</nav>
+			 <nav>
+ 	    		<ul>
+ 		        	<li><a href="{{ url_for('about') }}">About</a></li>
+ 							<li><a href="{{ url_for('result') }}">Results</a></li>
+ 							<li><a href="{{ url_for('visualization') }}">Vizualizations</a></li>
+ 							<li><a href="{{ url_for('future') }}">Future</a></li>
+ 	    		</ul>
+ 			</nav>
 
 <link
     href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css"

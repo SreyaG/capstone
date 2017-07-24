@@ -4,21 +4,19 @@
 			<title>Tweet-lete</title>
 			<!-- link to main stylesheet -->
 			<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+			<nav>
+	    		<ul>
+		        	<li><a href="{{ url_for('about') }}">About</a></li>
+							<li><a href="{{ url_for('result') }}">Results</a></li>
+							<li><a href="{{ url_for('visualization') }}">Vizualizations</a></li>
+							<li><a href="{{ url_for('future') }}">Future</a></li>
+	    		</ul>
+			</nav>
 		</head>
 		<body background="{{ url_for('static',filename='images/bg.jpg') }}"; background-repeat:no-repeat; background-size:cover;>
 		<div class="container">
 	   <div class="header">
-			<nav>
-	    		<ul>
-						 <li role="presentation"><a href="index.html">Home</a></li>
 
-		        	<li role="presentation"><a href="{{ url_for('static',filename='pages/about.html') }}">About</a></li>
-	        		<li role="presentation"><a href="{{ url_for('static',filename='pages/result.html') }}">Results</a></li>
-							<li role="presentation"><a href="{{ url_for('static',filename='pages/visualizations.html') }}">Visualizations</a></li>
-							<li role="presentation"><a href="{{ url_for('static',filename='pages/future.html') }}">Future Work</a></li>
-
-	    		</ul>
-			</nav>
 			<style>
 			form { text-align: center;}
 			</style>
@@ -154,7 +152,6 @@
 										<option value="Korea, Republic of" title="Korea, Republic of">Korea, Republic of</option>
 										<option value="Kuwait" title="Kuwait">Kuwait</option>
 										<option value="Kyrgyzstan" title="Kyrgyzstan">Kyrgyzstan</option>
-										<option value="Lao People's Democratic Republic" title="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
 										<option value="Latvia" title="Latvia">Latvia</option>
 										<option value="Lebanon" title="Lebanon">Lebanon</option>
 										<option value="Lesotho" title="Lesotho">Lesotho</option>
@@ -172,10 +169,6 @@
 										<option value="Mali" title="Mali">Mali</option>
 										<option value="Malta" title="Malta">Malta</option>
 										<option value="Marshall Islands" title="Marshall Islands">Marshall Islands</option>
-										<option value="Martinique" title="Martinique">Martinique</option>
-										<option value="Mauritania" title="Mauritania">Mauritania</option>
-										<option value="Mauritius" title="Mauritius">Mauritius</option>
-										<option value="Mayotte" title="Mayotte">Mayotte</option>
 										<option value="Mexico" title="Mexico">Mexico</option>
 										<option value="Micronesia, Federated States of" title="Micronesia, Federated States of">Micronesia, Federated States of</option>
 										<option value="Moldova, Republic of" title="Moldova, Republic of">Moldova, Republic of</option>
@@ -273,7 +266,7 @@
 										<option value="Uzbekistan" title="Uzbekistan">Uzbekistan</option>
 										<option value="Vanuatu" title="Vanuatu">Vanuatu</option>
 										<option value="Venezuela, Bolivarian Republic of" title="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
-										<option value="Viet Nam" title="Viet Nam">Viet Nam</option>
+										<option value="Vietnam" title="Viet Nam">Viet Nam</option>
 										<option value="Virgin Islands, British" title="Virgin Islands, British">Virgin Islands, British</option>
 										<option value="Virgin Islands, U.S." title="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
 										<option value="Wallis and Futuna" title="Wallis and Futuna">Wallis and Futuna</option>
