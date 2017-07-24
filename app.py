@@ -5,12 +5,9 @@ Created on Wed Jul 19 21:12:14 2017
 @author: srghosh
 """
 from flask import Flask, render_template, request, redirect
-import quandl as qd
 import pandas as pd
 import numpy as np
-from bokeh.charts import Line,output_file, show
-from bokeh.embed import components
-import scipy
+
 
 def plot_close(tickr):
     df=pd.read_csv("toflask.csv", sep=',')
@@ -89,6 +86,6 @@ def future():
         img3=s.image.tolist()[2],img4=s.image.tolist()[3],img5=s.image.tolist()[4])
 
 if __name__ == '__main__':
-    #app.run(port=1234)
-  #port = int(os.environ.get("PORT", 5000))
-     app.run(host='0.0.0.0', port=5000)
+    app.run(port=1234)
+    #port = int(os.environ.get("PORT", 5000))
+    #app.run(host='0.0.0.0', port=5000)
